@@ -1,24 +1,2 @@
-# zlbbs-cms
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 介绍
+这是一个基于`Vue3`前端框架开发的一个论坛管理系统，与`bbs`项目中基于`Flask`开发的论坛系统进行对接，体现前后端分离开发的模式。实现对论坛系统中文章，评论，用户，轮播图等进行管理以及相关数据变化图表可视化展示。
