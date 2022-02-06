@@ -17,36 +17,37 @@
                 background-color="#545c64"
                 active-text-color="#fff"
                 text-color="#ddd"
+                :router="true"
               >
-                <el-menu-item index="1">
+                <el-menu-item index="1" :route="{ name: 'home' }">
                   <template #title>
                     <el-icon><house /></el-icon>
                     <span>首页</span>
                   </template>
                 </el-menu-item>
 
-                <el-menu-item index="2">
+                <el-menu-item index="2" :route="{ name: 'banner' }">
                   <template #title>
                     <el-icon><picture-rounded /></el-icon>
                     <span>轮播图</span>
                   </template>
                 </el-menu-item>
 
-                <el-menu-item index="3">
+                <el-menu-item index="3" :route="{ name: 'post' }">
                   <template #title>
                     <el-icon><postcard /></el-icon>
                     <span>帖子管理</span>
                   </template>
                 </el-menu-item>
 
-                <el-menu-item index="4">
+                <el-menu-item index="4" :route="{ name: 'comment' }">
                   <template #title>
                     <el-icon><comment /></el-icon>
                     <span>评论管理</span>
                   </template>
                 </el-menu-item>
 
-                <el-menu-item index="5">
+                <el-menu-item index="5" :route="{ name: 'user' }">
                   <template #title>
                     <el-icon><user-filled /></el-icon>
                     <span>用户管理</span>
@@ -57,7 +58,9 @@
           </el-row>
         </el-aside>
         <el-container>
-          <el-main class="main"> 这里放网页内容部分 </el-main>
+          <el-main class="main">
+            <router-view></router-view>
+          </el-main>
           <el-footer class="footer">这是Footer</el-footer>
         </el-container>
       </el-container>
