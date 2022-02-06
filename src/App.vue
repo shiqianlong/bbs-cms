@@ -20,35 +20,35 @@
               >
                 <el-menu-item index="1">
                   <template #title>
-                    <el-icon></el-icon>
+                    <el-icon><house /></el-icon>
                     <span>首页</span>
                   </template>
                 </el-menu-item>
 
                 <el-menu-item index="2">
                   <template #title>
-                    <el-icon></el-icon>
+                    <el-icon><picture-rounded /></el-icon>
                     <span>轮播图</span>
                   </template>
                 </el-menu-item>
 
                 <el-menu-item index="3">
                   <template #title>
-                    <el-icon></el-icon>
+                    <el-icon><postcard /></el-icon>
                     <span>帖子管理</span>
                   </template>
                 </el-menu-item>
 
                 <el-menu-item index="4">
                   <template #title>
-                    <el-icon></el-icon>
+                    <el-icon><comment /></el-icon>
                     <span>评论管理</span>
                   </template>
                 </el-menu-item>
 
                 <el-menu-item index="5">
                   <template #title>
-                    <el-icon></el-icon>
+                    <el-icon><user-filled /></el-icon>
                     <span>用户管理</span>
                   </template>
                 </el-menu-item>
@@ -66,8 +66,23 @@
 </template>
 
 <script>
+import {
+  House,
+  PictureRounded,
+  Postcard,
+  Comment,
+  UserFilled,
+} from "@element-plus/icons";
+
 export default {
   name: "App",
+  components: {
+    House,
+    PictureRounded,
+    Postcard,
+    Comment,
+    UserFilled,
+  },
 };
 </script>
 
